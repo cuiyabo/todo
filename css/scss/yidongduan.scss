@@ -1,0 +1,85 @@
+$d-list:320px,360px,375px,412px,414px,768px;
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+body{
+
+    font-size: 15px;
+    background-image:url(../img/bj2.png);
+    
+}
+$design-size:750px;
+//设计稿的大小
+@each $w in $d-list{
+    @media screen and (min-width:#{$w}){
+        html{
+            font-size: 100px * $w /$design-size;
+        }
+    }
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1.4rem;
+    height: 18rem;
+    background-size: 100%;
+    background-image:url(../img/bj1.png) ;
+    .aniu{
+        position: absolute;
+        top: 0.5rem;
+        left: 0.15rem;
+        img{
+            width: 1rem;
+        }
+    }
+    .tanhao{
+        position:fixed;
+        bottom: 0.3rem;
+        left: 0.35rem;
+         img{
+            width: 0.5rem;
+        }
+    }
+}
+.flooter{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0.3rem;
+    height: 18rem;
+    background-size: 100%;
+    background-image:url(../img/bj3.png) ;
+}
+#todolist{
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem ;
+    width: 6rem;
+    height:100%;
+    z-index: -1;
+    background: red;
+    input{
+//      position: absolute;
+        float:left;
+        margin-top:0.3rem;
+        top: 0;
+        left: 0.5rem;
+        height: 1.2rem ;
+        width: 6rem;
+        border-radius: 5px;
+        height: 1.2rem;
+//      background:red;
+        z-index: 0;
+        font-size: 0.5rem;
+//      
+}
+}
+
+

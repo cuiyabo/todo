@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  list-style: none;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  background-image: url(../img/bj2.png);
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1.4rem;
+  height: 18rem;
+  background-size: 100%;
+  background-image: url(../img/bj1.png);
+}
+
+.header .aniu {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.15rem;
+}
+
+.header .aniu img {
+  width: 1rem;
+}
+
+.header .tanhao {
+  position: fixed;
+  bottom: 0.3rem;
+  left: 0.35rem;
+}
+
+.header .tanhao img {
+  width: 0.5rem;
+}
+
+.flooter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0.3rem;
+  height: 18rem;
+  background-size: 100%;
+  background-image: url(../img/bj3.png);
+}
+
+#todolist {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  width: 6rem;
+  height: 100%;
+  z-index: -1;
+  background: red;
+}
+
+#todolist input {
+  float: left;
+  margin-top: 0.3rem;
+  top: 0;
+  left: 0.5rem;
+  height: 1.2rem;
+  width: 6rem;
+  border-radius: 5px;
+  height: 1.2rem;
+  z-index: 0;
+  font-size: 0.5rem;
+}
