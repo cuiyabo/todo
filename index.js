@@ -6,10 +6,17 @@ $(function(){
 	$('#todolist').on('touchend','input',function(e){
 		var n = e.originalEvent.changedTouches[0].clientX;
 //		console.log(e)
+//		
 		if(n - pos >=30){
+			$(this).delay(300).queue(function(){
+//				console.log($(this))
+				$(this).addClass("input").dequeue().delay(300).queue(function(){
+					$(this).remove().dequeue();
+				})
+			})
 			arr.splice($(this).index(),1);
 			localStorage.obj = JSON.stringify(arr);
-			$(this).remove();
+//			$(this).remove();
 		}
 	})
 	
